@@ -136,6 +136,7 @@ input:focus::placeholder {
 /* Mobile styiling */
 @media (max-width: 27em) {
   body {
+    overflow: hidden;
     margin-top: 25%;
   }
 
