@@ -148,9 +148,7 @@ input:focus::placeholder {
 
 .valid_confirmation__after {
   font-size: 1.562rem;
-  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
-  background-clip: text;
-  color: transparent;
+  color: green;
   font-weight: bold;
 }
 
