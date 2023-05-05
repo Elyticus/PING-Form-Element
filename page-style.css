@@ -17,6 +17,16 @@
   box-sizing: inherit;
 }
 
+p.display__error {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-top: -3.125rem;
+  margin-left: 2rem;
+  color: red;
+  font-style: italic;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -53,7 +63,6 @@ img.dashboard__image {
 }
 
 .date__input {
-  display: flex;
   margin-bottom: 4.375rem;
 }
 
@@ -133,8 +142,25 @@ input:focus::placeholder {
   font-size: 12px;
 }
 
+.valid_confirmation {
+  display: none;
+}
+
+.valid_confirmation__after {
+  color: green;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Mobile styiling */
 @media (max-width: 27em) {
+  p.display__error {
+    margin-left: 20px;
+  }
+
   body {
     overflow: hidden;
     margin-top: 25%;
@@ -153,7 +179,7 @@ input:focus::placeholder {
   }
 
   .social_media__icons {
-    margin-top: 6.75rem;
+    margin-top: 4.75rem;
   }
 
   .sub__btn {
